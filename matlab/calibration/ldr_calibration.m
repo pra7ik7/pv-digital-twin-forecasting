@@ -31,7 +31,6 @@ R2     = 1 - ss_res/ss_tot;
 
 fprintf('Fitted: G = %.2f * V^%.4f\n', a, b);
 fprintf('R²    : %.4f\n', R2);
-
 % ── Plot ─────────────────────────────────────────────
 V_smooth = linspace(min(V), max(V), 200);
 G_smooth = power_law(p_fit, V_smooth);
