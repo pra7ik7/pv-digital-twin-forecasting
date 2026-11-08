@@ -8,7 +8,7 @@ clc; clear; close all;
 % ── Configuration ─────────────────────────────────────────────
 SERIAL_PORT  = 'COM6';                    % CHANGE to your Arduino port
 BAUD_RATE    = 9600;
-MODEL_NAME   = 'Grid_connected_single_phase_solar0x2DCopy';
+MODEL_NAME   = 'PV_twin_final';
 SIM_TIME     = '0.5';                     % seconds — quick steady-state
 
 IRR_BLOCK    = [MODEL_NAME '/Constant'];

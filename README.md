@@ -49,8 +49,7 @@ and, for comparison, by Solcast satellite-derived irradiance.
 
 Site-specific irradiance reduces the RMSE by a factor of four. On the clear day the twin
 overestimates measured power (mean measured/twin ratio 0.876), which is consistent with losses the
-model does not represent (wiring, soiling, module mismatch, inverter and conditioning-unit
-losses); on the partly cloudy day the ratio is about 1.0.
+model does not represent (for example wiring, soiling and module mismatch); on the partly cloudy day the ratio is about 1.0.
 
 ![Measured and simulated power](figures/field_validation.png)
 
