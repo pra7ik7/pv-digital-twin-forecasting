@@ -1,54 +1,15 @@
-# Results
+﻿# Results summary
 
-This directory summarizes the main quantitative results obtained from
-the PV digital twin, irradiance sensor calibration, forecasting
-analysis, and real-time demonstration.
+Produced by `python/validation_metrics.py` from `data/simulation/`.
 
-## Digital Twin Validation
+| Item | Value |
+| --- | --- |
+| STC power | 335.0 W at 38.0 V |
+| DC-link voltage (218 runs) | 85.0-85.2 V |
+| MPPT tracking efficiency, 200-1000 W/m2 | 99.9-100 % |
+| Field RMSE / r, on-site irradiance | 24.2 W / 0.969 |
+| Field RMSE / r, Solcast irradiance | 99.8 W / 0.693 |
+| LDR calibration | G = 77.2 V^3.663, R2 = 0.974, n = 21 |
+| Day-8 daily energy error, SARIMA / persistence | -0.75 % / -6.69 % |
 
-Using site-specific LDR-based irradiance measurements:
-
-- Pearson correlation: r = 0.918
-- R² = 0.843
-- RMSE = 34.76 W
-- MAE = 30.38 W
-
-Using satellite-derived irradiance:
-
-- Pearson correlation: r = 0.703
-- R² = 0.494
-- RMSE = 114.23 W
-- MAE = 100.11 W
-
-## LDR Calibration
-
-The nonlinear irradiance calibration achieved:
-
-- R² = 0.974
-
-## SARIMA Forecasting
-
-Irradiance forecasting:
-
-- R² = 0.921
-- RMSE = 76.30 W/m²
-- MAE = 34.69 W/m²
-
-Temperature forecasting:
-
-- R² = 0.964
-- RMSE = 1.30 °C
-- MAE = 1.06 °C
-
-## End-to-End PV Power Forecast
-
-For the selected validation day:
-
-- Forecast daily energy: 1193 Wh
-- Reference daily energy: 1199 Wh
-- Daily energy error: -0.50%
-- Power-profile R²: 0.858
-- Power RMSE: 30.09 W
-- Power MAE: 12.43 W
-
-Detailed methodology and results are provided in the project report.
+See the top-level README for the full tables and limitations.
