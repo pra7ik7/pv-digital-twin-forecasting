@@ -117,7 +117,7 @@ fprintf('├──────────────────────�
 fprintf('│  RMSE       : %7.2f W/m^2                  │\n', rmse_i);
 fprintf('│  MAE        : %7.2f W/m^2                  │\n', mae_i);
 fprintf('│  MAPE (day) : %7.2f %%                       │\n', mape_i);
-fprintf('│  R^2        : %7.4f                          │\n', R2_i);
+fprintf('│  r^2 (squared Pearson r): %7.4f                          │\n', R2_i);
 fprintf('└─────────────────────────────────────────────┘\n');
 
 fprintf('\n┌─────────────────────────────────────────────┐\n');
@@ -126,7 +126,7 @@ fprintf('├──────────────────────�
 fprintf('│  RMSE       : %7.2f °C                      │\n', rmse_t);
 fprintf('│  MAE        : %7.2f °C                      │\n', mae_t);
 fprintf('│  MAPE       : %7.2f %%                       │\n', mape_t);
-fprintf('│  R^2        : %7.4f                          │\n', R2_t);
+fprintf('│  r^2 (squared Pearson r): %7.4f                          │\n', R2_t);
 fprintf('└─────────────────────────────────────────────┘\n');
 
 %% ── SECTION 8 : Save Results CSV ────────────────────────────────
@@ -204,7 +204,7 @@ plot(tForecast, tempF, '--v','Color',[0.85 0.55 0.10], ...
      'LineWidth',1.2,'MarkerSize',4);
 ylabel('Temperature (°C)');
 
-title(sprintf('Day 8 Zoom — Actual vs Forecast | Irr R^2 = %.3f, Temp R^2 = %.3f', R2_i, R2_t), ...
+title(sprintf('Day 8 Zoom — Actual vs Forecast | Irr r^2 = %.3f, Temp r^2 = %.3f', R2_i, R2_t), ...
       'FontSize',11);
 xlabel('Hour of Day'); grid on;
 legend('Actual Irr','Forecast Irr','Actual Temp','Forecast Temp', ...

@@ -88,7 +88,6 @@ partly reflects compensation between over- and under-forecast hours (the midday 
 missed), and only one validation day was used.
 
 ![Day-ahead forecast](figures/day_ahead_forecast.png)
-![SARIMA forecast and validation](figures/forecast_validation.png)
 
 ### Live sensor-to-twin run
 

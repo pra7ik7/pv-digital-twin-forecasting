@@ -1,5 +1,5 @@
 function pv_curve_sweep(k, modeldir, jobfile, outfile, stopT)
-% Measure the PV block's own P-V curve inside the corrected twin: MPPT is
+% Measure the PV block's own P-V curve inside the final twin: MPPT is
 % disabled (MPPT_On = 0) so the P&O holds V_ref at its initial value, which
 % is set to each sweep voltage; the PV-voltage PI then holds V_pv there.
 % jobs columns: G, T, V

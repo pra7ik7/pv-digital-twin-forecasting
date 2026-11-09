@@ -1,5 +1,5 @@
 function worker2(k, modeldir, jobfile, outfile, stopT)
-% Run job list on the corrected twin. Each worker uses its own copy.
+% Run job list on the final twin. Each worker uses its own copy.
 % jobs columns: set, idx, G, T, noct  (noct=1: T is ambient; 0: T is cell temp)
 base = fileparts(mfilename('fullpath'));
 wd = fullfile(base, sprintf('cw%d', k)); if ~exist(wd,'dir'), mkdir(wd); end
