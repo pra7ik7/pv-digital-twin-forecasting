@@ -5,7 +5,7 @@ field measurements, driven by a low-cost Arduino/LDR irradiance sensor, and coup
 day-ahead weather forecaster.
 
 Final-year project, B.E. Electrical Engineering, Department of Electrical Engineering, IOE Pulchowk
-Campus, Tribhuvan University (2025-2026).
+Campus, Tribhuvan University (Sep 2025 - May 2026).
 
 ![System architecture](figures/system_architecture.png)
 
